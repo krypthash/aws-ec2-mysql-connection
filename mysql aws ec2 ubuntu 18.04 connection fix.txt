@@ -1,0 +1,10 @@
+AWS EC2 mysql connection fix for ubuntu 18.04 LTS
+
+Error mysql connection refused.
+
+---------------------How to fix----------------------
+
+1. Go to aws terminal sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf.
+2. You need to comment out the bind-address   = 127.0.0.1.
+example:     #bind-address  = 127.0.0.1
+3. Save and exit.
